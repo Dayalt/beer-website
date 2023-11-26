@@ -38,7 +38,8 @@ function App() {
 
 
       <section id='contact' style={{backgroundColor: 'SandyBrown'}} >  {/* Section Contact */}
-        <div className="contenedor">
+      <div className="contenedor-contacto" >
+          <Contact />
         </div>
 
       </section>
