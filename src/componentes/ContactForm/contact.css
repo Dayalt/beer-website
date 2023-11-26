@@ -1,31 +1,78 @@
-/* Contacto.css */
-.contact-section {
-    text-align: center;
-    padding: 50px;
+/* Contact.css */
+
+.contenedor-contacto {
+    background: url("../../img/portada-cervezas-artesanales.jpg") left top no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    position: relative;
 }
 
 .contact-form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input,
-textarea {
+/* Alinea toda la estructura a la izquierda */
+.contact-form div,
+.contact-form textarea,
+.contact-form button {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
 }
 
-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+/* Estilo específico para las cajas de nombre y email */
+.contact-form .name-email {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form .name-email input {
+    flex: 1; /* Ocupa todo el ancho disponible */
+}
+
+.contact-form textarea {
+    padding: 20px;
+    border: 1px solid #fff;
     border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 15px; /* Agregado para separar la caja de mensaje */
+}
+
+.contact-form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Ajusta el padding para reducir el tamaño */
+    border-radius: 5px;
+    font-size: 15px; /* Ajusta el tamaño del texto */
     cursor: pointer;
+    width: auto; /* Ancho automático para adaptarse al contenido */
+    margin-right: 280px; /* Agregado para añadir espacio a la derecha */
+}
+
+
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff6347;
+    font-size: 14px;
+}
+
+.success-message {
+    color: #32cd32;
+    font-size: 28px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1{
+    font-size: 20px;
+    text-align: left;
 }

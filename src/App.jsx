@@ -39,7 +39,6 @@ function App() {
 
       <section id='contact' style={{backgroundColor: 'SandyBrown'}} >  {/* Section Contact */}
         <div className="contenedor">
-          <h1>Contactos</h1>
         </div>
 
       </section>

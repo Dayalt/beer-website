@@ -56,50 +56,55 @@ function Contact() {
   };
 
   return (
-    <section className="contact-section" id="contact">
-      <h2>Contacto</h2>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="nombre">Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            value={formValues.nombre}
-            onChange={handleChange}
-          />
-          {errors.nombre && <span className="error">{errors.nombre}</span>}
-        </div>
-
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formValues.email}
-            onChange={handleChange}
-          />
-          {errors.email && <span className="error">{errors.email}</span>}
-        </div>
-
-        <div>
-          <label htmlFor="mensaje">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            value={formValues.mensaje}
-            onChange={handleChange}
-          />
-          {errors.mensaje && <span className="error">{errors.mensaje}</span>}
-        </div>
-
-        <button type="submit">Enviar</button>
-      </form>
-      {successMessage && <p className="success-message">{successMessage}</p>}
+    <section className="contenedor-contacto" id="contact">
+      <div className="container">
+        <h1>CONTACTANOS</h1>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="name-email">
+            <div>
+              <label htmlFor="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                value={formValues.nombre}
+                onChange={handleChange}
+              />
+              {errors.nombre && <span className="error">{errors.nombre}</span>}
+            </div>
+  
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formValues.email}
+                onChange={handleChange}
+              />
+              {errors.email && <span className="error">{errors.email}</span>}
+            </div>
+          </div>
+  
+          <div>
+            <label htmlFor="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              value={formValues.mensaje}
+              onChange={handleChange}
+            />
+            {errors.mensaje && <span className="error">{errors.mensaje}</span>}
+          </div>
+  
+          <button type="submit">Enviar</button>
+        </form>
+        {successMessage && (
+          <p className="success-message">{successMessage}</p>
+        )}
+      </div>
     </section>
   );
-}
+        }
 
 export default Contact;
-
