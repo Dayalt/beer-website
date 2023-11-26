@@ -1,0 +1,23 @@
+.footer{
+    background-color: black;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .barra{
+        padding-top: 1.5rem;
+    }
+    .barra nav{
+       display: flex;
+       gap: 2rem;
+    }
+}

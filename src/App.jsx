@@ -1,11 +1,13 @@
 // Estilos
 import './App.css'
+import './componentes/Footer/Footer.css'
 
 //Componentes
 import Header from './componentes/Header/Header'
 import Testimonials from './componentes/Testimonials';
 import BeerFlex from './componentes/BeerFlex/BeerFlex';
 import Contact from './componentes/ContactForm/Contact';
+import Footer from './componentes/Footer/Footer';
 
 
 function App() {
@@ -44,7 +46,9 @@ function App() {
         </div>
 
       </section>
-
+      <footer className='footer'>
+        <Footer  />
+      </footer>
     </div>
   )
 }
