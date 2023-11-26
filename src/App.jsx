@@ -5,6 +5,7 @@ import './App.css'
 import Header from './componentes/Header/Header'
 import Testimonials from './componentes/Testimonials';
 import BeerFlex from './componentes/BeerFlex/BeerFlex';
+import Contact from './componentes/ContactForm/Contact';
 
 
 function App() {
