@@ -34,10 +34,18 @@ function App() {
       </section>
 
 
-      <section id="testimonios" style={{backgroundColor: 'black'}}> {/* Section Testimonio */}
+      <section
+        id="testimonios"
+          style={{
+            backgroundImage: 'url(./src/img/cubos-de-hielo-grandes-y-transparentes.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            color: 'white',
+          }}
+            >
         <div className='contenedor'>
-        <h1>TESTIMONIOS</h1>
-          <Testimonials />
+           <Testimonials />
         </div>
       </section>
 

@@ -23,7 +23,7 @@ const Testimonials = () => {
       author: 'PEDRO PEREZ',
       text: 'Rápida entrega y muchos medios de pago',
     },
-    // Add more testimonials as needed
+    // agregar mas si queremos
   ]);
 
   const [newTestimonialText, setNewTestimonialText] = useState('');
@@ -51,6 +51,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials-container">
+      <h1 className="testimonialstitulo">TESTIMONIOS</h1>
       <div className="testimonials-list">
         {testimonialsData.map((testimonial) => (
           <Testimonial key={testimonial.id} {...testimonial} onDelete={deleteTestimonial} />
