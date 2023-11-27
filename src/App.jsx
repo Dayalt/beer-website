@@ -28,8 +28,10 @@ function App() {
         </div>
       </section>
      
-      <section id="productos"> {/* Section Productos */}
-        <BeerFlex />
+      <section id="productos" className="producto-container"> {/* Section Productos */}
+        <div className="contenedor">
+           <BeerFlex />
+        </div>  
 
       </section>
 
