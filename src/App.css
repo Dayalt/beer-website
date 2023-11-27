@@ -1,14 +1,32 @@
 .contenedor{
-  display:flexbox;
   width: 95%;
   max-width: 120rem;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
+}
+
+#testimonios{
+  height: auto;
+}
+
+#coverImage{
+  height: 58.2vh;
 }
 
 #aboutUs,
-#coverImage,
-#testimonios,
 #contact{
-  height:auto
+  height: 60vh;
+}
+
+.producto-container{
+  height: 90vh;
+  /* background-color: lightcyan; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 480px) and (max-height: 600px){
+  .producto-container{
+      height: 65rem;
+      background-color: blueviolet;
+  }
 }

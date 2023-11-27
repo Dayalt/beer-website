@@ -1,6 +1,7 @@
 // Link del React Scroll
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import logoImage from "../../assets/logo.png";
 import './Footer.css'
 
 function Footer(){
@@ -17,7 +18,8 @@ function Footer(){
                     duration={500}
                     className="nav_enlace"  
                 >
-                <h1 className="header-h1">LOGO</h1>
+                <img src={logoImage} alt="Logo" className="header-logo" />
+
                 </Link>
             
 
@@ -68,6 +70,7 @@ function Footer(){
                     </Link>
                 </nav>
             </div>
+            <p style={{color:"white", width:"100%", textAlign:"center", fontSize:"1.4rem"}}>Copyright © {new Date().getFullYear()}. Derechos Reservados</p>
         </div>
     );
 }

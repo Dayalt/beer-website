@@ -22,7 +22,9 @@ function Header() {
     <header className="header">
       <div className="header-contenido">
         <div className="header-logo-container">
-          <img src={logoImage} alt="Logo" className="header-logo" />
+        <Link activeClass="active"to="coverImage" spy={true} smooth={true}className="header-enlace">
+            <img src={logoImage} alt="Logo" className="header-logo" />
+        </Link>
         </div>
         <Link
           activeClass="active"

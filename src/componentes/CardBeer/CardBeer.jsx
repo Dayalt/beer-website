@@ -35,15 +35,15 @@ function CardBeer(props) {
     return (
         <div className="producto">
           <Boton marginLeft='-11rem' marginBottom="10px" color="#8ac926" texto="Nueva Edicción" />
-          <a href="#">
+
             <img className="producto_imagen" src={imagen} width={230} height={230} alt={`Imagen de ${props.nombre}`} />
 
             <div className="producto_info">
               <p className="producto_nombre"> {props.nombre}</p>
               <p className="producto_color"> <strong>Color:</strong> {props.color}</p>
-              <p className="producto_descripcion"><strong>Descripción:</strong><span> {props.descripcion}</span></p>
+              <p className="producto_descripcion"><strong>Descripción:</strong> <span>{props.descripcion}</span></p>
             </div>
-          </a>
+         
         </div>
     );
 }
