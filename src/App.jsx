@@ -34,10 +34,10 @@ function App() {
       </section>
 
 
-      <section id="testimonios" style={{backgroundColor: 'LightSteelBlue'}}> {/* Section Testimonio */}
+      <section id="testimonios" style={{backgroundColor: 'black'}}> {/* Section Testimonio */}
         <div className='contenedor'>
+        <h1>TESTIMONIOS</h1>
           <Testimonials />
-            <p> van los componentes del testimonio</p>
         </div>
       </section>
 
