@@ -1,4 +1,5 @@
 // Estilos
+import React from 'react';
 import './App.css'
 import './componentes/Footer/Footer.css'
 
@@ -8,15 +9,16 @@ import Testimonials from './componentes/Testimonials';
 import BeerFlex from './componentes/BeerFlex/BeerFlex';
 import Contact from './componentes/ContactForm/Contact';
 import Footer from './componentes/Footer/Footer';
+import beerImage from './assets/beer-drink.jpg';
 
 
 function App() {
   return (
     <div>
       <Header />
-      <section id='coverImage'>  {/* Portada Imagen principal */}
+      <section id='coverImage' className="cover-image-section">  {/* Portada Imagen principal */}
          <div>
-          <p>Va la imagen</p>
+         <img className='imagen' src="src/assets/beer-drink.jpg" alt="Foto bebida" />
           </div>
       </section>
 
