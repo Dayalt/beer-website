@@ -17,15 +17,29 @@ function App() {
     <div>
       <Header />
       <section id='coverImage' className="cover-image-section">  {/* Portada Imagen principal */}
-         <div>
+         <div className='cover'>
          <img className='imagen' src="src/assets/beer-drink.jpg" alt="Foto bebida" />
           </div>
       </section>
 
-      <section id='aboutUs'  style={{backgroundColor: 'aquamarine'}} > {/* Section About Us */}
-        <div className='contenedor'>
-          <h1>Nostroso</h1>
-        </div>
+      <section id='aboutUs' > {/* Section About Us */}
+          <h2 className='aboutUs-titulo'>Acerca de Nosotros</h2>
+          <div className="aboutUs-contenedor">
+            <div className="aboutUs-image">
+              <img src="/src/assets/logo.png" alt="" />
+            </div>
+            <div className="aboutUs-text">
+              <div className="text">
+                <p><strong>Beer-Website</strong>, un destino digital creado con pasión por la cerveza y la cultura que la rodea. En nuestra plataforma.</p>
+                <br />
+                <p>En <strong>Beer-Website</strong>, nos esforzamos por ir más allá de la presentación de productos. Queremos ofrecer una experiencia inmersiva, donde cada visita sea un viaje sensorial a través de las diferentes notas, aromas y estilos de cerveza. Además, fomentamos la conexión entre la comunidad cervecera, compartiendo historias, testimonios y conocimientos.</p>
+                 <div className="aboutUs-overlay"></div>
+                 <div className="aboutUs-imagen"></div>
+
+              </div>
+             
+            </div>
+          </div>
       </section>
      
       <section id="productos" className="producto-container"> {/* Section Productos */}

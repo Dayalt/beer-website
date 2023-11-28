@@ -28,11 +28,6 @@
     height: 100vh;
 }
 
-#aboutUs {
-    background-color: aquamarine;
-    padding: 20px 0 20px; /* Ajusta el relleno según tus necesidades */
-    margin-top: calc(50vh - 70px);
-}
 .header-bg-image {
     width: 100%;
     height: 100%;
