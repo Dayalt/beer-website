@@ -94,7 +94,7 @@ ion-icon{
 .mostrar{
     visibility: visible;
     opacity: 1;
-    height: 10vh;/*Toma el espacio que requiere*/
+    height: 11vh;/*Toma el espacio que requiere*/
 }
 
 /* Pantallas a partir de tablet */

@@ -22,21 +22,10 @@ function Header() {
     <header className="header">
       <div className="header-contenido">
         <div className="header-logo-container">
-        <Link activeClass="active"to="coverImage" spy={true} smooth={true}className="header-enlace">
+        <Link activeClass="active"to="coverImage" spy={true} smooth={true} className="header-enlace">
             <img src={logoImage} alt="Logo" className="header-logo" />
         </Link>
         </div>
-        <Link
-          activeClass="active"
-          to="coverImage"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className="nav_enlace"
-        >
-          <div className="header-bg-image" style={{ backgroundImage: `url(${beerImage})` }} />
-        </Link>
 
         <button className="header-btn" onClick={alternarMenu}><ion-icon name="menu-outline"></ion-icon></button>
 
@@ -46,7 +35,7 @@ function Header() {
             to="aboutUs"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-85}
             duration={500}
             className="nav_enlace"
           >
