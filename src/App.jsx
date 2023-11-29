@@ -10,6 +10,7 @@ import BeerFlex from './componentes/BeerFlex/BeerFlex';
 import Contact from './componentes/ContactForm/Contact';
 import Footer from './componentes/Footer/Footer';
 import beerImage from './assets/beer-drink.jpg';
+import logo from './assets/logo.png'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Header />
       <section id='coverImage' className="cover-image-section">  {/* Portada Imagen principal */}
          <div className='cover'>
-         <img className='imagen' src="src/assets/beer-drink.jpg" alt="Foto bebida" />
+          <div className="imagen"></div>
           </div>
       </section>
 
@@ -26,7 +27,7 @@ function App() {
           <h2 className='aboutUs-titulo'>Acerca de Nosotros</h2>
           <div className="aboutUs-contenedor">
             <div className="aboutUs-image">
-              <img src="/src/assets/logo.png" alt="" />
+              <img src={logo} alt="" />
             </div>
             <div className="aboutUs-text">
               <div className="text">
@@ -51,15 +52,7 @@ function App() {
 
 
       <section
-        id="testimonios"
-          style={{
-            backgroundImage: 'url(./src/img/cubos-de-hielo-grandes-y-transparentes.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            color: 'white',
-          }}
-            >
+        id="testimonios"  >
         <div className='contenedor'>
            <Testimonials />
         </div>

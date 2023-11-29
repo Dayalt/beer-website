@@ -22,9 +22,10 @@
     height: 100vh; 
 }
 .imagen{
-    background-image: url('src/assets/beer-drink.jpg'); 
-    object-fit: cover;
-    width: 100%;
+    background-image: url('../../assets/beer-drink.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
     height: 100vh;
 }
 
