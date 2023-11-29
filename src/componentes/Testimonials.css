@@ -2,6 +2,13 @@
 
 /* Estilos específicos para la sección de testimonios */
 
+#testimonios{
+  background-image: url("../assets/cubos-de-hielo-grandes-y-transparentes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
 .testimonials-container {
   text-align: center;
   padding: 50px 20px;

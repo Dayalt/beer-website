@@ -13,6 +13,7 @@
     max-width: 400px;
     margin: 0;
     padding: 20px;
+    padding-top: 5rem;
     box-sizing: border-box;
 }
 
@@ -45,6 +46,7 @@
     background-color: #4caf50;
     color: #fff;
     border: none;
+    margin-top: 1rem;
     padding: 10px 20px; /* Ajusta el padding para reducir el tamaño */
     border-radius: 5px;
     font-size: 15px; /* Ajusta el tamaño del texto */
@@ -64,11 +66,12 @@
     font-size: 14px;
 }
 
+
 .success-message {
     color: #32cd32;
     font-size: 28px;
     position: absolute;
-    top: 10px;
+    top: 34px;
     left: 10px;
 }
 
